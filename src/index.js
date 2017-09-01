@@ -1,1 +1,2 @@
-export default from './MarkdownFetcher'
+import MarkdownFetcher from './MarkdownFetcher'
+export default MarkdownFetcher
