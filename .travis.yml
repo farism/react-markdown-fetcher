@@ -1,0 +1,18 @@
+sudo: false
+
+os:
+  - linux
+
+language: node_js
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+install:
+  - nvm install
+  - yarn
+
+after_success:
+  yarn run coverage
